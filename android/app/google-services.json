@@ -1,0 +1,39 @@
+{
+  "project_info": {
+    "project_number": "477209908117",
+    "project_id": "ifreelancer-clone-app",
+    "storage_bucket": "ifreelancer-clone-app.appspot.com"
+  },
+  "client": [
+    {
+      "client_info": {
+        "mobilesdk_app_id": "1:477209908117:android:11188209d5e32bf93d5c9c",
+        "android_client_info": {
+          "package_name": "etg.freelance_marketplace"
+        }
+      },
+      "oauth_client": [
+        {
+          "client_id": "477209908117-ctshhcs2rut6b2injmdk2avmi34se2b2.apps.googleusercontent.com",
+          "client_type": 3
+        }
+      ],
+      "api_key": [
+        {
+          "current_key": "AIzaSyD9_iw1aAWZh2BgF6jl1qKYkgapCdKjQxs"
+        }
+      ],
+      "services": {
+        "appinvite_service": {
+          "other_platform_oauth_client": [
+            {
+              "client_id": "477209908117-ctshhcs2rut6b2injmdk2avmi34se2b2.apps.googleusercontent.com",
+              "client_type": 3
+            }
+          ]
+        }
+      }
+    }
+  ],
+  "configuration_version": "1"
+}
