@@ -29,8 +29,9 @@ class _LoginState extends State<Login> {
       body: SafeArea(
           child: Center(
             child: Column(
+              mainAxisAlignment: MainAxisAlignment.center,
               children: [
-                const SizedBox(height: 50,),
+                const SizedBox(height: 40,),
 
                 //  Logo
                 const Icon(
@@ -38,7 +39,7 @@ class _LoginState extends State<Login> {
                     size: 100,
                 ),
 
-                const SizedBox(height: 50,),
+                const SizedBox(height: 40,),
 
                 //  Welcome Text
                 Text(
@@ -87,7 +88,7 @@ class _LoginState extends State<Login> {
                 MyButton(
                   onTap: signUserIn,
                 ),
-                const SizedBox(height: 50,),
+                const SizedBox(height: 25,),
 
                 //  or continue with text
                 Padding(
@@ -127,8 +128,26 @@ class _LoginState extends State<Login> {
 
                   ],
                 ),
+                const SizedBox(height: 25,),
 
                 //  Not a member, register now
+                Row(
+                  mainAxisAlignment: MainAxisAlignment.center,
+                  children: [
+                    Text('Not a member? ',
+                      style: TextStyle(
+                        color: Colors.grey[700],
+                      ),
+                    ),
+                    const SizedBox(width: 5,),
+                    const Text('Register Now',
+                      style: TextStyle(
+                        color: Colors.blue,
+                        fontWeight: FontWeight.bold,
+                      ),
+                    ),
+                  ],
+                )
             ],),
           ),
       ),
