@@ -3,11 +3,12 @@ import 'package:flutter/material.dart';
 
 void main() {
   WidgetsFlutterBinding.ensureInitialized();
-  runApp(MyApp());
+  runApp( MyApp());
 }
 
 class MyApp extends StatelessWidget {
   final Future<FirebaseApp> _initialization = Firebase.initializeApp();
+
 
 
 
@@ -24,8 +25,9 @@ class MyApp extends StatelessWidget {
                 child: Text('iFreelance Marketplace app is being initialized...',
                   style: TextStyle(
                     color: Colors.cyan,
-                    fontSize: 20,
+                    fontSize: 38,
                     fontWeight: FontWeight.bold,
+                    fontFamily: 'Signatra',
                   ),
                 ),
               ),
@@ -48,6 +50,7 @@ class MyApp extends StatelessWidget {
           );
         }
         return MaterialApp(
+          debugShowCheckedModeBanner: false,
           title: 'iFreelance Marketplace',
           theme: ThemeData(
             scaffoldBackgroundColor: Colors.black,
