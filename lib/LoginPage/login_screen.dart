@@ -2,6 +2,8 @@
 
 import 'package:flutter/material.dart';
 
+import '../Components/text_field.dart';
+
 class Login extends StatefulWidget {
 
   @override
@@ -9,6 +11,11 @@ class Login extends StatefulWidget {
 }
 
 class _LoginState extends State<Login> {
+
+  // text editing controllers
+  final usernameController = TextEditingController();
+  final passwordController = TextEditingController();
+
   @override
   Widget build(BuildContext context) {
     return Scaffold(
@@ -35,12 +42,23 @@ class _LoginState extends State<Login> {
                     fontSize: 16,
                   ),
                 ),
-
                 const SizedBox(height: 25,),
 
                 //  Email/username Text Field
+                MyTextField(
+                  controller: usernameController,
+                  hintText: 'Email/Username',
+                  obscureText: false,
+                ),
+                const SizedBox(height: 25,),
 
                 //  Password Text Field
+                MyTextField(
+                  controller: passwordController,
+                  hintText: 'Password',
+                  obscureText: true,
+                ),
+                const SizedBox(height: 25,),
 
                 //  signin text button
 
